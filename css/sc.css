@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: grey; }
+
+html, body {
+  width: 100%;
+  font-size: 62.5%; }
+
+header {
+  width: 100%; }
+  header .n {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    height: 50px; }
+    header .n .ss {
+      width: 10%; }
+    header .n .sss {
+      width: 75%;
+      height: 2rem;
+      border-radius: 18px;
+      background-color: grey; }
+      header .n .sss input {
+        width: 100%;
+        height: 2.1rem;
+        border: 0px;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        background-color: #ddd; }
+    header .n .ssss {
+      width: 25%;
+      text-align: center;
+      line-height: 24px; }
+
+section {
+  width: 100%;
+  height: 20rem;
+  border-bottom: 1px solid grey; }
+  section .ws div {
+    display: flex;
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-left: 3%; }
+    section .ws div div {
+      text-align: center; }
+  section .s1 {
+    padding: 0 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 18px;
+    background-color: gainsboro; }
+  section .rm {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    section .rm div {
+      width: 33.2%;
+      text-align: center; }

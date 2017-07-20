@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				font-size: 62.5%;
+			}
+			
+			.lunbo {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				.swiper-slide{
+					display: flex;
+					width: 100%;
+					img{
+						width: 100%;
+					}
+				}
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="swiper-container lunbo">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+
+					<img src="img/15.png" />
+					
+				</div>
+				<div class="swiper-slide">
+					<img src="img/16.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="img/19.png" />
+				</div>
+			</div>
+			<div class="swiper-pagination">
+
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript">
+	var lunbo = new Swiper('.lunbo', {
+		autoplay: 2000,
+		loop: true,
+		pagination: '.swiper-pagination',
+		//		false:不停止
+		autoplayDisableOnInteraction: false,
+	})
+</script>

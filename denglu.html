@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--优先使用IE最新版本和Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+    <!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!--禁止浏览器自动的识别-电话号码-email--->
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <!--是否启用Web全屏-->
+    <meta name="apple-mobile-web-app-capable" content='yes' />
+    <meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+    <!--设置苹果工具栏颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content='black' />
+
+		<title></title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script src="js/swiper.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<link rel="stylesheet" href="css/zong.css">
+		<link rel="stylesheet" href="css/denglu.css">
+		<script src="appcj/jquery-3.1.1.min.js"></script>
+		
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header-left"><a href="mine.html"> < </a></div>
+			<div class="header-right">忘记密码</div>
+		</div>
+		<!--banner-->
+		<div class="banner">
+			<img src="img/img2.png" alt="" />
+		</div>
+		<!--登录按钮-->
+		<div class="main">
+			<div class="main-top">
+				<input type="text" placeholder="支持中国大陆" id="user" />
+				<input type="text" placeholder="8-30位数字或英文" id="paw" />
+			</div>
+			<div class="main-bottom">
+				<button id="btn"><a href="index.html">登录</a></button>
+			</div>
+			<span><a href="#">立即注册</a></span>
+			<p>—— 其他方式登录 ——</p>
+		</div>
+		<!--底部-->
+		<div class="footer">
+			<ul>
+				<li>
+						<img src="img/bom1.png" alt="" />
+						<span>QQ</span>
+				</li>
+				<li>
+						<img src="img/bom3.png" alt="" />
+						<span>微博</span>
+				</li>
+				<li>
+						<img src="img/bom2.png" alt="" />
+						<span>微信</span>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<script>
+		/*$('#btn').click(function(){
+			$.ajax({
+				type:"get",
+				url:"http://127.0.0.1:8086",
+				async:true,
+				dataType:'json',
+				data:{user:$('#user').val(),paw:$('#paw').val()},
+				dataFilter:function(data){
+					alert(data)
+				}
+			});
+		})
+			*/
+			
+			
+		</script>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+a:hover{
+  text-decoration: none;
+}
+img {
+  max-width: 100%; }
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+overflow-x: hidden;}
+
+body > * {
+    //border: 1px solid red;
+  }

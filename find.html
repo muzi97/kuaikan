@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    <!--优先使用IE最新版本和Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+    <!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!--禁止浏览器自动的识别-电话号码-email--->
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <!--是否启用Web全屏-->
+    <meta name="apple-mobile-web-app-capable" content='yes' />
+    <meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+    <!--设置苹果工具栏颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content='black' />
+		<title></title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/find.css" />
+		<link rel="stylesheet" href="js/swiper.min.css" />
+		<link rel="stylesheet" href="js/app.css" />
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src = "js/app.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/zepto.min.js"></script>
+		
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			     <div class="cen">
+			    	<div class="but1">推荐</div>
+			    	<div class="but2">分类</div>
+			    </div>
+		</header>
+		
+		<div class="tuijian">
+			<div class="swiper-container lunbo">
+			<div class="swiper-wrapper lun"></div>
+		</div>
+		<div class="con"></div>
+		
+		<div class="tuicon1">
+			<p>本周推荐</p>
+			<span>更多></span>
+		</div>
+		<div class="con1">
+			<div class="tt"></div>
+			<div class="tt"></div>
+		</div>
+		
+	
+		<div class="tuicon1">
+			<p>热门必看</p>
+			<span>更多></span>
+		</div>
+		<div class="con2">
+			<div class="ty"></div>
+			<div class="ty"></div>
+		</div>
+		
+		<div class="tuicon1">
+			<p>新品上架</p>
+			<span>更多></span>
+		</div>
+		
+		<div class="xin">
+		</div>
+		</div>
+		
+		<div class="fenlei">
+			<div class="conn">
+			<div class="tby"></div>
+			<div class="tby"></div>
+		</div>
+		</div>
+
+
+		<!--底部-->
+			<div class="footer">
+			<ul>
+				<li>
+					<a href="index.html">
+						<p class="glyphicon glyphicon-home"></p>
+						<p>漫画</p>
+					</a>
+
+				</li>
+				<li>
+					<a href="find.html">
+						<p class="glyphicon glyphicon-eye-open"></p>
+						<p>发现</p>
+					</a>
+
+				</li>
+				<li>
+					<a href="sq.html">
+						<p class="glyphicon glyphicon-globe"></p>
+						<p>V社区</p>
+					</a>
+
+				</li>
+				<li>
+					<a href="mine.html">
+						<p class="glyphicon glyphicon-user"></p>
+						<p>我的</p>
+					</a>
+
+				</li>
+			</ul>
+		</div>
+
+		
+		<script>
+			$('.but1').css('background-color','#FFE339');
+			$('.but2').css('color','#FFE339');
+			$('.fenlei').css('display','none');
+			$('.but1').tap(function(){
+				$('.but1').css('background-color','#FFE339');
+				$('.but1').css('color','#422408');
+				$('.but2').css('background-color','#422408');
+			$('.but2').css('color','#FFE339');
+			$('.tuijian').css('display','block');
+			$('.fenlei').css('display','none');
+			})
+			$('.but2').tap(function(){
+				$('.tuijian').css('display','none');
+			$('.fenlei').css('display','block');
+				$('.but2').css('background-color','#FFE339');
+				$('.but2').css('color','#422408');
+				$('.but1').css('background-color','#422408');
+			$('.but1').css('color','#FFE339');
+			})
+			
+			$.ajax({
+				type:"get",
+				url:"http://127.0.0.1:8080/find",
+				async:true,
+				success:function(data){
+					var obj = JSON.parse(data);
+					console.log(data);
+                 
+                 var lunbo = obj.lunbo;
+                 var lun = '';
+                 for(var i in lunbo){
+                 	lun+='<div class="swiper-slide tu"><img src="'+lunbo[i]+'"></div>';
+                 }
+                 $('.lun').html(lun);
+                 play();
+                 
+                 var paihang = obj.paihang;
+                 var tui ='';
+                 for(var i in paihang){
+                 	tui+='<div><img src="'+paihang[i]+'"></div>';
+                 }
+                 $('.con').html(tui);
+                 
+                 var tuijian = obj.tuijian;
+                 var tui='';
+                 var jian='';
+                 for(var i=0;i<2;i++){
+                 tui+='<div><img src="'+tuijian[i].img+'"><p>'+tuijian[i].title+'</p><span>'+tuijian[i].wen+'</span></div>'
+                 }
+                 $('.tt:eq(0)').html(tui);
+                 for(var i=2;i<4;i++){
+                 jian+='<div><img src="'+tuijian[i].img+'"><p>'+tuijian[i].title+'</p><span>'+tuijian[i].wen+'</span></div>'
+                 }
+                 $('.tt:eq(1)').html(jian);
+                 
+                 var remen=obj.remen;
+                 var re='';
+                 var men='';
+                 for(var i=0;i<3;i++){
+                 re+='<div><img src="'+remen[i].img+'"><p>'+remen[i].title+'</p><span>'+remen[i].wen+'</span></div>'
+                 }
+                 $('.ty:eq(0)').html(re);
+                 for(var i=3;i<6;i++){
+                 men+='<div><img src="'+remen[i].img+'"><p>'+remen[i].title+'</p><span>'+remen[i].wen+'</span></div>'
+                 }
+                 $('.ty:eq(1)').html(men);
+                 
+                 var xinpin=obj.xinpin;
+                 var xin = '';
+                 for(var i in xinpin){
+                 	xin+='<div class="zong"><div class="le"><img src = '+xinpin[i].img+'></div><div class="ri"><p>'+xinpin[i].title+'</p><div class="bum"><span>'+xinpin[i].wen+'</span><span>'+xinpin[i].zi+'</span></div></div></div>';
+                 }
+                $('.xin').html(xin);
+                
+                
+                 
+                var fenrm=obj.fenrm;
+                 var fen='';
+                 var rm='';
+                 for(var i=0;i<3;i++){
+                 fen+='<div><img src="'+fenrm[i].img+'"><p>'+fenrm[i].title+'</p><span>'+fenrm[i].wen+'</span></div>'
+                 }
+                 $('.tby:eq(0)').html(fen);
+                 for(var i=3;i<6;i++){
+                 rm+='<div><img src="'+fenrm[i].img+'"><p>'+fenrm[i].title+'</p><span>'+fenrm[i].wen+'</span></div>'
+                 }
+                 $('.tby:eq(1)').html(rm);
+                
+				}
+			});
+			
+			function play(){
+				var mySwiper = new Swiper('.lunbo', {
+	autoplay: 500,
+	loop:true,
+	autoplayDisableOnInteraction:false,
+})
+			}
+			
+			
+		</script>
+	</body>
+</html>

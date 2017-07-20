@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+  overflow-x: hidden; }
+
+
+header{
+    a{
+        color: #FFE339;
+    }
+    span{
+        font-size: 2.4rem;
+        margin-left: 40%;
+    }
+    
+}
+
+
+.con {
+  width: 100%;
+ 
+   }
+  .con .tab {
+    width: 100%;
+    height: 3.4rem;
+//  background: #FFE339;
+    display: flex;
+    position: relative; }
+    .con .tab .swiper-wrapper {
+      width: 100%;
+      height: 2.8rem;
+      text-align: center;
+      border-bottom: 2px solid #DDDDDD;
+//    color: #FFE339;
+     
+     
+     text-align: center;
+      position: relative;
+      margin: 0.5rem auto;
+      box-sizing: content-box; }
+      .con .tab .swiper-wrapper .swiper-slide:nth-of-type(1) {
+        width: 40%;
+        height: 2.7rem;
+        text-align: center;
+        line-height: 2rem;
+        font-size: 2rem;
+        position: absolute;
+        left: 20%;
+        top: 0; }
+      .con .tab .swiper-wrapper .swiper-slide:nth-of-type(2) {
+        width: 20%;
+        height: 2.7rem;
+        text-align: center;
+        line-height: 2rem;
+       font-size: 2rem;
+        position: absolute;
+        right: 20%;
+        top: 0; }
+      .con .tab .swiper-wrapper .active1 {
+        border-bottom: 1px solid #FFE339;
+        color: #FFE339;
+         }
+    .con .tab .logo {
+      position: absolute;
+      right: 1rem;
+      top: 0;
+      width: 2rem;
+      height: 3rem;
+      font-size: 1.6rem;
+      line-height: 3rem; }
+      
+      .box{
+             margin-top: 1%;
+      }
+.zzp{
+ 
+    width: 100%;
+    height: 100%;
+   
+    li{
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 1px solid #DDDDDD;
+         div{
+             width: 48%;
+             img{
+                 width: 90%;
+             }
+             h3{
+                 font-size: 2rem;
+                 margin: 1rem 0;
+             }
+             p{
+                 color: #CCCCCC;
+             }
+         }
+    }
+}
+.zuoz{
+    width: 100%;
+    height: 100%;
+    li{
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #DDDDDD;
+       div{
+           font-size: 1.5rem;
+           img{
+               width: 80%;
+               margin-left: 5%;
+           }
+           p{
+               color: #FFE339;
+           }
+           span{
+               color: #CCCCCC;
+           }
+       }
+    }
+}

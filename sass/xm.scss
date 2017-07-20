@@ -1,0 +1,277 @@
+@import "zong";
+
+.header{
+    width: 100%;
+    
+    .head{
+        width: 100%;
+        height: 4rem;
+        position: fixed;
+        top: 0;left: 0;
+        z-index: 200;
+        display: flex;
+        justify-content: space-between;
+        background: rgba(0,0,0,0.4);
+        .head-left{
+            width: 10%;
+            height: 4rem;
+            font-size: 2rem;
+            line-height: 4rem;
+            color: white;
+            a{
+                width:100%;
+                color: white;
+                font-size: 2rem;
+                padding-left: 1rem;
+            }
+        }
+        .head-cen{
+            width: 50%;
+            text-align: center;
+            height: 4rem;
+            line-height: 4rem;
+            font-size: 2rem;
+            color: white;
+        }
+        .head-right{
+            width: 20%;
+            height: 3rem;
+            border-radius: 15px;
+            background: yellow;
+            font-size: 1.2rem;
+            color: saddlebrown;
+            text-align: center;
+            line-height: 3rem;
+            margin: 0.5rem 1rem 0.5rem 0;
+        }
+        
+    }
+    
+}
+
+
+section{
+    width: 100%;
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    .swiper1{
+        width: 100%;
+        display: flex;
+        height: 3rem;
+        display: flex;
+        
+        .swiper-wrapper{
+            width:100%;
+            height: 3rem;
+            display: flex;
+            text-align: center;
+            .swiper-slide{
+                height: 3rem;
+                line-height: 3rem;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            .active{
+                border-bottom-width:25% ;
+                border-bottom: 2px solid yellow;
+            }
+        }
+        
+    }
+    
+    .swiper2{
+        width: 100%;
+        display: flex;
+        .swiper-wrapper{
+            width: 100%;
+            .swiper-slide:nth-of-type(1){
+                width: 50%;                
+                display: flex;
+                flex-direction: column;
+                .con-top{
+                    padding:0.5rem 1rem;
+                    width: 100%;
+                    font-size: 1.4rem;
+                }
+                .con-zi{
+                     padding:0.5rem 1rem;
+                    width: 100%;
+                    font-size: 1.2rem;
+                }
+                .con-cen{
+                     padding:0.5rem 1rem;
+                    width: 100%;
+                    font-size: 1.2rem;
+                }
+                .con-bom{
+                     padding:0.5rem 1rem;
+                    width: 100%;
+                    font-size: 1rem;
+                    color: grey;
+                }
+                .con-box{
+                    width: 100%;
+                    border-top: 1rem solid #F1F1F1;
+                    display: flex;
+                     padding: 1rem;
+                     flex-direction: column;
+                    .box-top{                       
+                        width: 100%;
+                        display: flex;                      
+                        justify-content: space-between;
+                        h1{
+                            font-weight: 500;
+                            font-size: 1.4rem;
+                            margin: 0;
+                        }
+                        p{
+                            width: 20%;
+                            text-align: center;
+                            height: 2rem;
+                            font-size: 1rem;
+                            border-radius: 15px;
+                            line-height: 2rem;
+                            border: 1px solid cornflowerblue;
+                            background: lightblue;
+                            color: blue;
+                        }
+                    }
+                    
+                    .box-nei{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .box-left{
+                            width: 100%;
+                            height: 3rem;
+                            display: flex;
+                            justify-content: space-between;
+                            .box-img{
+                                width: 10%;
+                               height: 3rem;
+                                img{
+                                    width: 100%;
+                                     border-radius:50% ;
+                                }
+                            }
+                            .box-two{
+                                width: 60%;
+                                height: 3rem;
+                                line-height: 3rem;
+                                display: flex;
+                                flex-direction: column;
+                                p{
+                                    width: 100%;
+                                    height: 1.5rem;
+                                    line-height: 1.5rem;
+                                    font-size: 1rem;
+                                    color: gray;
+                                    margin: 0;
+                                }
+                                p:nth-of-type(1){
+                                    font-size: 1.2rem;
+                                    color: black;
+                                }
+                            }
+                            .box-right{
+                                width: 30%;
+                                height: 3rem;
+                                line-height: 3rem;
+                                text-align: right;
+                                }
+                            }
+                            .box-bom{
+                                width: 100%;
+                                font-size: 1.2rem;
+                                padding: 1rem  2rem;
+                                background: #F1F1F1;
+                            }
+                        }
+                    }
+                }
+            
+            .swiper-slide:nth-of-type(2){
+                width: 50%;
+                ul{
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2rem;
+                    li{
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 1rem;
+                        a{
+                            width: 100%;
+                            display: flex;
+                            .li-left{
+                            width: 30%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .li-rigth{
+                            width: 70%;
+                            padding: 1rem;
+                            position: relative;
+                            p{
+                                width: 100%;
+                                margin: 0;
+                                font-size: 1.2rem;
+                            }
+                            .li-bom{
+                                width: 100%;
+                                position: absolute;
+                                left: 1rem;bottom: 0;
+                                display: flex;
+                                justify-content: space-between;
+                                span{
+                                    font-size: 1rem;
+                                    color: gray;
+                                }
+                            
+                        }
+                        
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    
+    
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    border-top: 1px solid #ddd;
+    bottom: 0;left: 0;
+    z-index: 200;
+    height: 3rem;
+    display: flex;
+    .foot-left{
+        width: 70%;
+        height: 3rem;
+        font-size: 1rem;
+        color: gray;
+        background: #ddd;
+        text-align: center;
+        line-height: 3rem;
+    }
+    .foot-right{
+        width: 30%;
+        background: yellow;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        font-size: 1rem;
+        color: saddlebrown;
+        
+    }
+}

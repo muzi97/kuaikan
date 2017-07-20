@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+
+header {
+  width: 100%;
+  height: 0.7rem;
+  background-color: #FFE339;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  font-size: 0.2rem;
+  color: brown;
+  font-weight: 700;
+  padding: 0.1rem; }
+  header .cen {
+    width: 30%;
+    height: 0.5rem;
+    background-color: #422408;
+    margin: auto;
+    display: flex;
+    border-radius: 0.25rem;
+    justify-content: center; }
+    header .cen .but1 {
+      width: 45%;
+      height: 0.35rem;
+      background-color: #FFE339;
+      line-height: 0.35rem;
+      margin-top: 0.07rem;
+      text-align: center;
+      color: #422408;
+      border-radius: 0.15rem; }
+    header .cen .but2 {
+      width: 45%;
+      height: 0.35rem;
+      background-color: #422408;
+      line-height: 0.35rem;
+      margin-top: 0.07rem;
+      text-align: center;
+      color: #FFE339;
+      border-radius: 0.15rem; }
+
+.lunbo, .lunbo .lun, .lunbo .lun .tu, .con1, .con2 {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-top: 0.2rem; }
+  .lunbo .lun .tu img, .con1 .lun .tu img, .con2 .lun .tu img {
+    width: 100%; }
+
+.con {
+  width: 90%;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 0.05rem;
+  display: flex;
+  justify-content: space-around; }
+  .con div {
+    width: 23%;
+    height: auto;
+    background-color: white; }
+    .con div img {
+      width: 100%; }
+
+.tuicon1 {
+  width: 90%;
+  margin: 0.3rem auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.3rem; }
+  .tuicon1 p {
+    color: black; }
+  .tuicon1 span {
+    color: #ccc; }
+
+.con1 .tt {
+  width: 90%;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.2rem; }
+  .con1 .tt div {
+    width: 47%;
+    height: auto;
+    background-color: white; }
+    .con1 .tt div img {
+      width: 100%; }
+    .con1 .tt div p {
+      color: #000000;
+      font-weight: 700; }
+    .con1 .tt div span {
+      color: grey; }
+
+.con2 .ty {
+  width: 96%;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.2rem; }
+  .con2 .ty div {
+    width: 31.3%;
+    height: auto;
+    background-color: white; }
+    .con2 .ty div img {
+      width: 100%; }
+    .con2 .ty div p {
+      color: #000000;
+      font-weight: 700; }
+    .con2 .ty div span {
+      color: grey; }
+
+.xin, .xin .zong, .xin .zong .ri .bum {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-bottom: 0.8rem; }
+  .xin .zong, .xin .zong .ri .bum .zong {
+    display: flex;
+    justify-content: space-between; }
+    .xin .zong .le, .xin .zong .ri .bum .zong .le {
+      width: 45%;
+      height: 0.9rem;
+      background-color: white; }
+      .xin .zong .le img, .xin .zong .ri .bum .zong .le img {
+        width: 100%; }
+    .xin .zong .ri, .xin .zong .ri .bum .zong .ri {
+      width: 100%;
+      width: 50%;
+      height: 1rem;
+      background-color: white; }
+      .xin .zong .ri p, .xin .zong .ri .bum .zong .ri p {
+        font-size: 0.2rem;
+        color: #000000;
+        font-weight: 700; }
+      .xin .zong .ri .bum {
+        margin-top: 0.8rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        .xin .zong .ri .bum span {
+          height: 0.2rem;
+          font-size: 0.1rem;
+          color: grye; }
+
+.fenlei {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: 0.8rem 0; }
+  .fenlei .conn {
+    width: 90%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 0.2rem; }
+    .fenlei .conn .tby {
+      width: 100%;
+      height: auto;
+      background-color: white; }
+      .fenlei .conn .tby div {
+        width: 100%;
+        height: auto;
+        background-color: white; }
+        .fenlei .conn .tby div img {
+          width: 100%; }
+        .fenlei .conn .tby div p {
+          font-size: 0.4rem;
+          color: black;
+          font-weight: 600; }
+        .fenlei .conn .tby div span {
+          font-size: 0.3rem;
+          color: grey; }
+
+.footer {
+  width: 100%;
+  height: 0.75rem;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  border-top: 1px solid #ddd;
+  padding: 0.05rem 0; }
+  .footer ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around; }
+    .footer ul li {
+      width: 25%;
+      height: 0.3rem; }
+      .footer ul li a {
+        display: block;
+        width: 100%;
+        color: black; }
+        .footer ul li a p:nth-of-type(1) {
+          width: 100%;
+          color: #d4d4d4;
+          font-size: 0.3rem;
+          text-align: center;
+          margin: 0; }
+        .footer ul li a p:nth-of-type(2) {
+          width: 100%;
+          color: black;
+          font-size: 0.08rem;
+          text-align: center;
+          margin: 0.02rem 0 0.05rem 0; }
+    .footer ul li a:hover {
+      text-decoration: none; }
+    .footer ul li a:hover p {
+      color: #FFE339; }
+
+/*# sourceMappingURL=find.css.map */

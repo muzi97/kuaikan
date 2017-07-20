@@ -1,0 +1,521 @@
+@charset "UTF-8";
+//基本样式
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+span {
+    display: inline-block;
+}
+
+//定义混合宏
+@mixin h($w, $p, $l, $bg) {
+    width: $w;
+    position: $p;
+    left: $l;
+    background: $bg;
+}
+
+@mixin w($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin content1($w, $d, $bg) {
+    width: $w;
+    display: $d;
+    background: $bg;
+}
+
+@mixin pd($w, $pt, $pl, $f) {
+    width: $w;
+    padding-top: $pt;
+    padding-left: $pl;
+    font-size: $f;
+}
+
+@mixin wpfm($w, $f, $m) {
+    width: $w;
+    font-size: $f;
+    margin-left: $m;
+}
+
+//  **********************
+img {
+    @include w(100%, 100%);
+}
+
+html,
+body {
+    @include w(100%, 100%);
+    font-size: 62.5%;
+    //  overflow-x: hidden;
+    background: #F6FAF9;
+}
+
+//头部
+header {
+    @include h(100%, fixed, 0, white);
+    top: 0;
+}
+
+header .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+}
+
+header .header .header-left {
+    padding-left: 1.5rem;
+    width: 20%;
+    font-size: 5rem;
+    color: orange;
+}
+
+header .header .header-center {
+    width: 60%;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+header .header .header-right {
+    width: 20%;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    color: orange;
+}
+
+//    页脚
+footer {
+    @include h(100%, fixed, 0, white);
+    bottom: 0;
+}
+
+footer .footer {
+    @include w(100%, 5rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FAFAFA;
+    font-size: 3rem;
+    color: gray;
+}
+
+footer .footer .fa-pencil-square-o {
+    position: relative;
+}
+
+footer .footer form input {
+    @include w(20rem, 3rem);
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-left: -7rem;
+    outline: none;
+}
+
+//    内容
+section {
+    width: 100%;
+    margin-top: 6rem;
+    .op1 {
+        font-size: 2rem;
+        background: white;
+        height: 10rem;
+        line-height: 10rem;
+        text-align: center;
+    }
+    .con2 {
+        font-size: 2rem;
+        background: white;
+        height: 10rem;
+        line-height: 10rem;
+        text-align: center;
+    }
+    .con4 {
+        @include w(100%, 10rem);
+        background: white;
+        font-size: 2rem;
+        padding: 8rem 0 8rem 2rem;
+    }
+    .con5 {
+        @include w(100%, 10rem);
+        background: white;
+        font-size: 2.3rem;
+        padding: 10rem 0 10rem 2rem;
+    }
+    .con6 {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        text-align: center;
+        background: white;
+        padding: 3rem 0;
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            img {
+                @include w(50%, 50%);
+            }
+        }
+    }
+    .con7 {
+        @include w(100%, 15rem);
+        line-height: 15rem;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        background: white;
+    }
+    .con8 {
+        padding: 2rem 0 2rem 2rem;
+        //      width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: white;
+        margin-top: 1rem;
+        img {
+            @include w(20%, 20%);
+        }
+        span {
+            @include pd(60%, 2rem, 1rem, 1.5rem);
+        }
+        div {
+            @include pd(25%, 2rem, 0rem, 1.2rem);
+        }
+    }
+    .con9 {
+        padding: 2rem 0 2rem 2rem;
+        display: flex;
+        justify-content: space-around;
+        background: white;
+        border-top: 1px solid gainsboro;
+        img {
+            @include w(20%, 20%);
+        }
+        span {
+            @include pd(60%, 2rem, 1rem, 1.5rem);
+        }
+        div {
+            @include pd(25%, 2rem, 0rem, 1.2rem);
+        }
+    }
+    .son1 {
+        @include w(100%, 5rem);
+        line-height: 5rem;
+        font-size: 2rem;
+        background: white;
+        margin-top: 0.5rem;
+        padding-left: 2rem;
+    }
+    //  *************
+    .tu {
+        @include content1(100%, flex, white);
+        .tu-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  *******************
+    .tu2 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu2-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu2-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu2-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  ************
+    .tu3 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu3-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu3-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu3-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  ****************************
+    .tu4 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu4-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu4-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu4-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  ******************
+    .tu5 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu5-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu5-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu5-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  ***********
+    .tu6 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu6-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu6-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu6-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  ***********
+    .tu7 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu7-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu7-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu7-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  ***********
+    .tu8 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu8-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu8-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu8-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  ***********
+    .tu9 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu9-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu9-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu9-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //  ***********
+    .tu10 {
+        @include content1(100%, flex, white);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        .tu10-left {
+            width: 20%;
+            img {
+                @include w(100%, 100%);
+            }
+        }
+        .tu10-right {
+            width: 80%;
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .tu10-p1 {
+        @include content1(100%, flex, white);
+        border-bottom: 1px solid gainsboro;
+        div {
+            width: 100%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            margin-left: 6rem;
+            color: gainsboro;
+        }
+    }
+    //查看更多
+    .ck {
+        background: white;
+        line-height: 4rem;
+        text-align: center;
+        margin-bottom: 5rem;
+        div {
+            width: 15rem;
+            font-size: 2rem;
+            background: #F8F8F8;
+            margin: 1.5rem 0 1.5rem 5.5rem;
+            border-radius: 15px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+	"boxOne":[
+	          {"title1":"恋爱","title2":"零分偶像","title3":"全集","img1":"img3.png","title4":"第64话 我不想成为明星","title5":"41万","title6":"12413"},
+	          {"title1":"青春","title2":"朝花夕拾","title3":"全集","img1":"img1.png","title4":"第64话 是她不是他","title5":"41万","title6":"12413"},
+	          {"title1":"治愈","title2":"捡到一只小狐狸","title3":"全集","img1":"img4.png","title4":"第64话 最后的诀别","title5":"41万","title6":"12413"},
+	          {"title1":"治愈","title2":"捡到一只小狐狸","title3":"全集","img1":"img1.png","title4":"第64话 最后的诀别","title5":"41万","title6":"12413"}
+	          ],
+	 "box2":["周六","周日","周一","周二","周三","昨天","今天"],
+	 "tabTwo":[
+	          {"title1":"治愈","title2":"捡到一只小狐狸","title3":"全集","img1":"img3.png","title4":"第64话 最后的诀别","title5":"41万","title6":"12413"},
+	          {"title1":"治愈","title2":"捡到一只小狐狸","title3":"全集","img1":"img1.png","title4":"第64话 最后的诀别","title5":"41万","title6":"12413"},
+	          {"title1":"治愈","title2":"捡到一只小狐狸","title3":"全集","img1":"img4.png","title4":"第64话 最后的诀别","title5":"41万","title6":"12413"},
+	          {"title1":"治愈","title2":"捡到一只小狐狸","title3":"全集","img1":"img3.png","title4":"第64话 最后的诀别","title5":"41万","title6":"12413"}
+	          ]
+}

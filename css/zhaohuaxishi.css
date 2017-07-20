@@ -1,0 +1,458 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul li {
+  list-style: none; }
+
+span {
+  display: inline-block; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  background: #F6FAF9; }
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  background: white;
+  top: 0; }
+
+header .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro; }
+
+header .header .header-left {
+  padding-left: 1.5rem;
+  width: 20%;
+  font-size: 5rem;
+  color: orange; }
+
+header .header .header-left a{
+	width: 20%;
+	color: yellow;
+	text-decoration: none;
+}
+
+header .header .header-center {
+  width: 60%;
+  font-size: 2rem;
+  padding-top: 1.5rem; }
+
+header .header .header-right {
+  width: 20%;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  color: orange; }
+
+header .header .header-right a{
+  text-decoration: none;
+  color: yellow; 
+  width: 20%;
+  }
+
+
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  background: white;
+  bottom: 0; }
+
+footer .footer {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #FAFAFA;
+  font-size: 3rem;
+  color: gray; }
+
+footer .footer .fa-pencil-square-o {
+  position: relative; }
+
+footer .footer form input {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 20px;
+  border: 1px solid gray;
+  margin-left: -7rem;
+  outline: none; }
+
+section {
+  width: 100%;
+  margin-top: 6rem; }
+  section .op1 {
+    font-size: 2rem;
+    background: white;
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center; }
+  section .con2 {
+    font-size: 2rem;
+    background: white;
+    height: 10rem;
+    line-height: 10rem;
+    text-align: center; }
+  section .con4 {
+    width: 100%;
+    height: 10rem;
+    background: white;
+    font-size: 2rem;
+    padding: 8rem 0 8rem 2rem; }
+  section .con5 {
+    width: 100%;
+    height: 10rem;
+    background: white;
+    font-size: 2.3rem;
+    padding: 10rem 0 10rem 2rem; }
+  section .con6 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    text-align: center;
+    background: white;
+    padding: 3rem 0;
+    border-bottom: 1px solid gainsboro; }
+    section .con6 div {
+      width: 100%; }
+      section .con6 div img {
+        width: 50%;
+        height: 50%; }
+  section .con7 {
+    width: 100%;
+    height: 15rem;
+    line-height: 15rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    background: white; }
+  section .con8 {
+    padding: 2rem 0 2rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    margin-top: 1rem; }
+    section .con8 img {
+      width: 20%;
+      height: 20%; }
+    section .con8 span {
+      width: 60%;
+      padding-top: 2rem;
+      padding-left: 1rem;
+      font-size: 1.5rem; }
+    section .con8 div {
+      width: 25%;
+      padding-top: 2rem;
+      padding-left: 0rem;
+      font-size: 1.2rem; }
+  section .con9 {
+    padding: 2rem 0 2rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    border-top: 1px solid gainsboro; }
+    section .con9 img {
+      width: 20%;
+      height: 20%; }
+    section .con9 span {
+      width: 60%;
+      padding-top: 2rem;
+      padding-left: 1rem;
+      font-size: 1.5rem; }
+    section .con9 div {
+      width: 25%;
+      padding-top: 2rem;
+      padding-left: 0rem;
+      font-size: 1.2rem; }
+  section .son1 {
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: white;
+    margin-top: 0.5rem;
+    padding-left: 2rem; }
+  section .tu {
+    width: 100%;
+    display: flex;
+    background: white; }
+    section .tu .tu-left {
+      width: 20%; }
+      section .tu .tu-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu .tu-right {
+      width: 80%; }
+      section .tu .tu-right div {
+        font-size: 1rem; }
+  section .tu1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu2 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu2 .tu2-left {
+      width: 20%; }
+      section .tu2 .tu2-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu2 .tu2-right {
+      width: 80%; }
+      section .tu2 .tu2-right div {
+        font-size: 1rem; }
+  section .tu2-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu2-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu3 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu3 .tu3-left {
+      width: 20%; }
+      section .tu3 .tu3-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu3 .tu3-right {
+      width: 80%; }
+      section .tu3 .tu3-right div {
+        font-size: 1rem; }
+  section .tu3-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu3-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu4 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu4 .tu4-left {
+      width: 20%; }
+      section .tu4 .tu4-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu4 .tu4-right {
+      width: 80%; }
+      section .tu4 .tu4-right div {
+        font-size: 1rem; }
+  section .tu4-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu4-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu5 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu5 .tu5-left {
+      width: 20%; }
+      section .tu5 .tu5-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu5 .tu5-right {
+      width: 80%; }
+      section .tu5 .tu5-right div {
+        font-size: 1rem; }
+  section .tu5-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu5-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu6 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu6 .tu6-left {
+      width: 20%; }
+      section .tu6 .tu6-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu6 .tu6-right {
+      width: 80%; }
+      section .tu6 .tu6-right div {
+        font-size: 1rem; }
+  section .tu6-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu6-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu7 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu7 .tu7-left {
+      width: 20%; }
+      section .tu7 .tu7-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu7 .tu7-right {
+      width: 80%; }
+      section .tu7 .tu7-right div {
+        font-size: 1rem; }
+  section .tu7-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu7-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu8 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu8 .tu8-left {
+      width: 20%; }
+      section .tu8 .tu8-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu8 .tu8-right {
+      width: 80%; }
+      section .tu8 .tu8-right div {
+        font-size: 1rem; }
+  section .tu8-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu8-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu9 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu9 .tu9-left {
+      width: 20%; }
+      section .tu9 .tu9-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu9 .tu9-right {
+      width: 80%; }
+      section .tu9 .tu9-right div {
+        font-size: 1rem; }
+  section .tu9-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu9-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .tu10 {
+    width: 100%;
+    display: flex;
+    background: white;
+    padding: 2rem 1rem;
+    box-sizing: border-box; }
+    section .tu10 .tu10-left {
+      width: 20%; }
+      section .tu10 .tu10-left img {
+        width: 100%;
+        height: 100%; }
+    section .tu10 .tu10-right {
+      width: 80%; }
+      section .tu10 .tu10-right div {
+        font-size: 1rem; }
+  section .tu10-p1 {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-bottom: 1px solid gainsboro; }
+    section .tu10-p1 div {
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      margin-left: 6rem;
+      color: gainsboro; }
+  section .ck {
+    background: white;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 5rem; }
+    section .ck div {
+      width: 15rem;
+      font-size: 2rem;
+     /* background: #F8F8F8;*/
+      margin: auto;
+      border-radius: 15px; }
